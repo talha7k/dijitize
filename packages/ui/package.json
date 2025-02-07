@@ -64,7 +64,7 @@
     "type-check:ci": "tsc-absolute --pretty --noEmit",
     "lint:fix": "eslint . --fix",
     "lint:report": "eslint . --format json --output-file ../../lint-results/ui.json",
-    "build:icons": "node ./scripts/build-icons.mjs"
+    "build:icons": "node init && node ./scripts/build-icons.mjs"
   },
   "dependencies": {
     "@calcom/lib": "*",

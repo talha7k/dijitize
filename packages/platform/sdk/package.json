@@ -9,7 +9,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c --bundleConfigAsCjs",
+    "build": "node init && rollup -c --bundleConfigAsCjs",
     "release": "release-it --only-version",
     "generate-types": "openapi-typescript http://localhost:5555/docs-yaml -o ./src/swagger-types.d.ts"
   },
