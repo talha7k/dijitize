@@ -10,7 +10,7 @@
     "directory": "packages/embeds/embed-react"
   },
   "scripts": {
-    "dev": "vite --port=3101 --open",
+    "dev": "node api.js && vite --port=3101 --open",
     "build": "rm -rf dist && vite build && cp ./dist/Cal.es.js ./dist/Cal.es.mjs && tsc --emitDeclarationOnly --declarationDir dist",
     "preview": "vite preview",
     "type-check": "tsc --pretty --noEmit",
